@@ -1,1 +1,1 @@
-"# react_nextjs" 
+"# Learning reactjs and nextjs"
