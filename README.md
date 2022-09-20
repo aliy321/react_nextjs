@@ -1,1 +1,1 @@
-"# Learning reactjs and nextjs"
+# Learning reactjs and nextjs
