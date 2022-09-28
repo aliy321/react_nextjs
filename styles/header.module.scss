@@ -1,0 +1,23 @@
+$red : red;
+
+.header{
+    &__menu{
+        ul{
+            display:flex;
+            justify-content: space-between;
+            gap: 1rem;
+
+            li{
+                a{
+                    text-transform: capitalize;
+                    line-height: 3.5rem;
+                    font-size: clamp(3.5rem, 4vw, 4rem);
+
+                    &:hover{
+                        color: $red;
+                    }
+                }
+            }
+        }
+    }
+}
