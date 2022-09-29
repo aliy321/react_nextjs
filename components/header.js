@@ -2,10 +2,12 @@ import Head from "next/head";
 import Link from "next/link";
 import { useState } from "react";
 
+import { motion } from "framer-motion"
+
 export default function Home() {
 	const [navbar, setNavbar] = useState(false);
 	return (
-		<div>
+		<section className="header">
 			<Head>
 				<title>insxght</title>
 				<meta name="description" content="insxght portfolio" />
@@ -67,18 +69,18 @@ export default function Home() {
 									</Link>
 								</li>
 								<li className="text-white">
-									<Link href="/blogs">
+									<Link href="/posts/first-post">
 										<a>Blogs</a>
 									</Link>
 								</li>
 								<li className="text-white">
 									<Link href="/about">
-										<a>About US</a>
+										<a>About Us</a>
 									</Link>
 								</li>
 								<li className="text-white">
 									<Link href="/contact">
-										<a>Contact US</a>
+										<a>Contact Us</a>
 									</Link>
 								</li>
 							</ul>
@@ -86,6 +88,6 @@ export default function Home() {
 					</div>
 				</div>
 			</nav>
-		</div>
+		</section>
 	);
 }

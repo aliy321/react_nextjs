@@ -1,12 +1,16 @@
 import Link from 'next/link';
+import withTransition from "../../HOC/withTransition";
+import Body from '../../components/body';
 
-export default function FirstPost() {
+function FirstPost() {
   return (
     <>
-      <h1>First Post</h1>
-      <h2>
-        <Link href="/">Back to home</Link>
-      </h2>
+      <Body>
+        <h1>First Post</h1>
+        
+      </Body>
     </>
   );
 }
+
+export default withTransition(FirstPost);

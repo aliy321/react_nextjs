@@ -1,9 +1,10 @@
-$red : red;
-
-.containers {
-    max-width: 36rem;
-    padding: 0 1rem;
-    margin: 3rem auto 6rem;
-    text-align: center;
-    background-color: $red;
+.card{
+    .card_body{
+        display: flex;
+        gap: 1em;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
 }

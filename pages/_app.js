@@ -1,12 +1,16 @@
 import Header from '../components/header';
 import Footer from '../components/footer';
 
-import '../styles/global.css';
+import { AnimatePresence } from "framer-motion";
+
+import '../styles/global.scss';
 
 export default function App({ Component, pageProps }) {
-    return <>
-        <Header/>
-        <Component {...pageProps} />
-        <Footer/>
-    </>
+    return (
+        <>
+            {/* <Header/> */}
+            <Component {...pageProps} />
+            {/* <Footer/> */}
+        </>
+    )
 }
